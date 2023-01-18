@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>tente abrir esse site am vários dispositivos fiderente ou simplismente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="fotos/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="fotos/Media.png" type="image/png">
+        <img src="fotos/grande.png" alt="Imagem Flex">
+    </picture>
+
+    <h1>Reproduzindo áudios em HTML5.</h1>
+    <p>Vamos aparender a reproduzir Áudio em HTML5.</p>
+    <audio id="teste" preload="metadata" autoplay controls loop>
+        <source src="midia/ring.mp3" type="audio/mpeg">
+        <source src="midia/ring.ogg" type="audio/ogg">
+        <source src="midia/ring.wav" type="audio/wav">
+        <p>infelizmente seu navegador não consegue produzir áudio</p>
+    </audio>
+    
+    <script>
+        var audio = document.getElementById("teste");
+        audio.volume = 0.1;
+      </script>
+    
+</body>
+</html>

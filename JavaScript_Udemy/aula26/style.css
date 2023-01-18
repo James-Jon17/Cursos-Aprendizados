@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Passion+One&family=Sriracha&display=swap');
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background: linear-gradient(90deg, lightcoral, blue);
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 650px;
+    margin: 50px auto;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.473);
+}
+
+form input, form label, form button {
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+form input {
+    height: 35px;
+    padding: 0 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+    border: none;
+}
+
+form input:focus {
+    outline: 1px solid lightcoral;
+}
+
+form button {
+    width: 100px;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid lightcoral;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 35px;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    background: lightcoral;
+    border-radius: 10px;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    z-index: -1;
+}
+
+button:hover::before {
+    width: 100%;
+}
+
+.paragrafo-resultado, .bad {
+    margin: 20px auto;
+    background-color: rgb(84, 226, 84);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.bad {
+    background-color: red;
+}

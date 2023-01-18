@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: lightcoral;
+    font: normal 16pt Arial 
+}
+
+form {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    
+}

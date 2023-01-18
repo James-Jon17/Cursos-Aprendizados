@@ -1,0 +1,7 @@
+print('Pague avista e tenha desconto, parcele e tenha aumento')
+valor = float(input('Digite o valor do seu produto'))
+porcentagem = float(input('digite sua porcentagem'))
+formula = float(valor * porcentagem / 100)
+desconto = (valor - formula)
+cartao = (desconto + (valor * 0.036))
+print(f'Seu valor é {valor:.2f}, pagando avista sai por {desconto:.2f}, parcelando no cartao aumenta {cartao:.2f}')

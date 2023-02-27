@@ -1,0 +1,11 @@
+{
+    "nome": "Jota",
+    "idade": 25,
+    "esta_trabalhando": null,
+    "detalhes_profissao": {
+        "profissao": "Programador",
+        "empresa": "auto_data"
+    },
+    "hobbies": ["Treinar", "Ler", "Aprender"]
+    
+}
